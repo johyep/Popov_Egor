@@ -1,0 +1,8 @@
+def sum_pairs(hz,s):
+    videl=set()
+    for num in hz:
+        nuzhn = s - num
+        if nuzhn in videl:
+            return[nuzhn,num]
+        videl.add(num)
+    return None
